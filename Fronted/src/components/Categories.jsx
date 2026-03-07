@@ -1,28 +1,40 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { categories } from "../assets/assets";
 
 const Categories = () => {
   return (
-    <div className="container py-5">
-      <div className="row">
-        {categories.map((cat, index) => (
-          <div className="col-md-3 mb-4" key={index}>
-            <div
-              className="card text-center border-0 shadow-sm"
-              style={{ backgroundColor: cat.bgColor }}
-            >
-              <div className="card-body">
-                <img
-                  src={cat.image}
-                  alt={cat.text}
-                  style={{ width: "80px", height: "80px" }}
-                />
-                <h5 className="mt-3">{cat.text}</h5>
-              </div>
+    <div className="row">
+
+      {categories.map((item, index) => (
+        <div className="col-md-3 mb-4" key={index}>
+
+          <motion.div
+            className="card text-center shadow category-card"
+            style={{ backgroundColor: item.bgColor }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+
+            <img
+              src={item.image}
+              className="card-img-top"
+              alt={item.text}
+              style={{ height: "140px", objectFit: "contain" }}
+            />
+
+            <div className="card-body">
+              <h5>{item.text}</h5>
             </div>
-          </div>
-        ))}
-      </div>
+
+          </motion.div>
+
+        </div>
+      ))}
+
     </div>
   );
 };

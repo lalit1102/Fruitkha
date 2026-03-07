@@ -167,3 +167,41 @@ export const images = {
     bgColor: "#F0F5DE",
   }
 ];
+
+export const dummyproducts = [
+  {
+    id: 1,
+    name: "Apple",
+    price: 4.99,
+    category: "Fruits",
+    image: "https://images.unsplash.com/photo-1560806887-1e4cd0b6caa6?w=500"
+  },
+  {
+    id: 2,
+    name: "Banana",
+    price: 2.99,
+    category: "Fruits",
+    image: "https://images.unsplash.com/photo-1603833665858-e61d17a86224?w=500"
+  },
+  {
+    id: 3,
+    name: "Carrot",
+    price: 1.99,
+    category: "Vegetables",
+    image: "https://images.unsplash.com/photo-1582515073490-dc3d9d5d46f4?w=500"
+  },
+  {
+    id: 4,
+    name: "Almonds",
+    price: 8.99,
+    category: "Dry Fruits",
+    image: "https://images.unsplash.com/photo-1604908176997-431c9f77c4c6?w=500"
+  },
+  {
+    id: 5,
+    name: "Orange Juice",
+    price: 3.99,
+    category: "Juices",
+    image: "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=500"
+  }
+];

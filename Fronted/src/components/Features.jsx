@@ -1,5 +1,6 @@
 import React from "react";
 import { featureData } from "../assets/assets";
+import { motion } from "framer-motion";
 
 const Features = () => {
  
@@ -7,6 +8,17 @@ const Features = () => {
   return (
     <div className="list-section pt-5 pb-5">
       <div className="container">
+        <motion.div
+          className="text-center mb-5"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+        <h2 className="fw-bold">Our Features</h2>
+        <p className="text-muted">
+          Experience the best online grocery shopping with our unique features
+        </p>
+      </motion.div>
         <div className="row">
           {featureData.map((item, index) => (
             <div key={index} className="col-lg-4 col-md-6 mb-4 mb-lg-0">

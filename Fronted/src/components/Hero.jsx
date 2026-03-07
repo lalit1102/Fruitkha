@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { images } from "../assets/assets";
+import RotatingText from "./RotatingText";
 
 const Hero = () => {
   return (
@@ -19,10 +20,17 @@ const Hero = () => {
             <div className="hero-text">
               <div className="hero-text-tablecell">
                 <p className="subtitle">Fresh &amp; Organic</p>
-                <h1>Delicious Seasonal Fruits</h1>
+                <h1>
+                  Welcome to Grocery Store{" "}
+                  <RotatingText
+                    texts={["Fresh", "Organic", "Healthy", "Natural"]}
+                    rotationInterval={2000}
+                  />
+                </h1>
                 <div className="hero-btns">
                   <Link to="/shop" className="boxed-btn">
-                    Fruit Collection
+                    Shop Now
+
                   </Link>
                   <Link to="/contact" className="bordered-btn">
                     Contact Us
