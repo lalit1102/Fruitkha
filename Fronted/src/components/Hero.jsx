@@ -7,7 +7,7 @@ const Hero = () => {
     <div
       className="hero-area d-flex align-items-center text-white"
       style={{
-        backgroundImage: `url(${images.heroBg})`,
+        backgroundImage: `url(${images.bg_img1})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "100vh",

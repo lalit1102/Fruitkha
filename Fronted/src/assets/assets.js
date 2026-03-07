@@ -40,6 +40,9 @@ import bottles_image from "./img/bottles_image.png"
 import maggi_image from "./img/maggi_image.png"
 import dairy_product_image from "./img/dairy_product_image.png"
 import bakery_image from "./img/bakery_image.png"
+import namkeen1 from "./img/namkeen1.png"
+import bg_img1 from "./img/bg_img1.png"
+
 
 
 export const images = {
@@ -85,6 +88,9 @@ export const images = {
   maggi_image,
   dairy_product_image,
   bakery_image,
+  namkeen1,
+  bg_img1
+  
   
 
 
@@ -157,7 +163,7 @@ export const images = {
   {
     text: "Namkins & Snacks",
     path: "Snacks",
-    image: snacks_image,
+    image: namkeen1,
     bgColor: "#F0F5DE",
   }
 ];
