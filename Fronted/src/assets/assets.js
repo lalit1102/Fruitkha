@@ -168,40 +168,85 @@ export const images = {
   }
 ];
 
-export const dummyproducts = [
+export const dummyProducts = [
   {
     id: 1,
     name: "Apple",
-    price: 4.99,
+    price: 120,
+    unit: "1 kg",
     category: "Fruits",
-    image: "https://images.unsplash.com/photo-1560806887-1e4cd0b6caa6?w=500"
+    image: "https://images.unsplash.com/photo-1560806887-1e4cd0b6caa6"
   },
   {
     id: 2,
     name: "Banana",
-    price: 2.99,
+    price: 40,
+    unit: "1 dozen",
     category: "Fruits",
-    image: "https://images.unsplash.com/photo-1603833665858-e61d17a86224?w=500"
+    image: "https://images.unsplash.com/photo-1574226516831-e1dff420e43e"
   },
   {
     id: 3,
-    name: "Carrot",
-    price: 1.99,
-    category: "Vegetables",
-    image: "https://images.unsplash.com/photo-1582515073490-dc3d9d5d46f4?w=500"
+    name: "Mango",
+    price: 150,
+    unit: "1 kg",
+    category: "Fruits",
+    image: "https://images.unsplash.com/photo-1553279768-865429fa0078"
   },
   {
     id: 4,
-    name: "Almonds",
-    price: 8.99,
-    category: "Dry Fruits",
-    image: "https://images.unsplash.com/photo-1604908176997-431c9f77c4c6?w=500"
+    name: "Potato",
+    price: 30,
+    unit: "1 kg",
+    category: "Vegetables",
+    image: "https://images.unsplash.com/photo-1518977676601-b53f82aba655"
   },
   {
     id: 5,
-    name: "Orange Juice",
-    price: 3.99,
-    category: "Juices",
-    image: "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=500"
+    name: "Tomato",
+    price: 25,
+    unit: "1 kg",
+    category: "Vegetables",
+    image: "https://images.unsplash.com/photo-1546094096-0df4bcaaa337"
+  },
+  {
+    id: 6,
+    name: "Milk",
+    price: 60,
+    unit: "1 litre",
+    category: "Dairy",
+    image: "https://images.unsplash.com/photo-1580910051074-3eb694886505"
+  },
+  {
+    id: 7,
+    name: "Butter",
+    price: 250,
+    unit: "500 gm",
+    category: "Dairy",
+    image: "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d"
+  },
+  {
+    id: 8,
+    name: "Bread",
+    price: 35,
+    unit: "1 pack",
+    category: "Bakery",
+    image: "https://images.unsplash.com/photo-1608198093002-ad4e005484ec"
+  },
+  {
+    id: 9,
+    name: "Biscuits",
+    price: 20,
+    unit: "1 pack",
+    category: "Snacks",
+    image: "https://images.unsplash.com/photo-1585238342024-78d387f4a707"
+  },
+  {
+    id: 10,
+    name: "Potato Chips",
+    price: 50,
+    unit: "1 pack",
+    category: "Snacks",
+    image: "https://images.unsplash.com/photo-1566478989037-eec170784d0b"
   }
 ];
