@@ -8,7 +8,7 @@ const Hero = () => {
     <div
       className="hero-area d-flex align-items-center text-white"
       style={{
-        backgroundImage: `url(${images.bg_img1})`,
+        backgroundImage: `url(${images.final_bg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "100vh",
@@ -27,12 +27,11 @@ const Hero = () => {
                     rotationInterval={2000}
                   />
                 </h1>
-                <div className="hero-btns">
-                  <Link to="/shop" className="boxed-btn">
+                <div className="mt-4 gap-3 d-flex justify-content-center">
+                  <Link to="/shop" className="btn btn-warning rounded-pill px-4 py-2 fw-bold shadow-sm" style={{ backgroundColor: '#F28123', borderColor: '#F28123', color: '#fff' }}>
                     Shop Now
-
                   </Link>
-                  <Link to="/contact" className="bordered-btn">
+                  <Link to="/contact" className="btn btn-outline-light rounded-pill px-4 py-2 fw-bold">
                     Contact Us
                   </Link>
                 </div>

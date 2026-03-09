@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { images } from "../assets/assets";
+import { useCart } from "../context/CartContext";
 
 const Navbar = () => {
   const [showSearch, setShowSearch] = useState(false);
   const navigate = useNavigate();
+  const { cartItems } = useCart();
+  const totalItems = cartItems.reduce((acc, item) => acc + item.quantity, 0);
 
   const navLinks = [
     { name: "Home", path: "/" },
@@ -19,7 +22,7 @@ const Navbar = () => {
       <div className="container">
         {/* Logo */}
         <Link className="navbar-brand" to="/">
-          <img src={images.logo} alt="FruitKha Logo" width="150" />
+          <img src={images.logo_black} alt="FruitKha Logo" width="150" />
         </Link>
 
         {/* Mobile Toggle */}
@@ -47,7 +50,7 @@ const Navbar = () => {
             ))}
           </ul>
 
-          {/* Right side: Search + Login */}
+          {/* Right side: Search + Cart + Login */}
           <div className="d-flex align-items-center gap-2 position-relative">
             {/* Search */}
             <div
@@ -65,6 +68,16 @@ const Navbar = () => {
                 />
               )}
             </div>
+
+            {/* Cart Icon */}
+            <Link to="/cart" className="nav-link ms-2 me-2 position-relative">
+              <i className="fas fa-shopping-cart fs-5 text-dark"></i>
+              {totalItems > 0 && (
+                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style={{ fontSize: '0.65rem' }}>
+                  {totalItems}
+                </span>
+              )}
+            </Link>
 
             {/* Login Button */}
             <button

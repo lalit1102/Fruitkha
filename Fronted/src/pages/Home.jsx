@@ -6,7 +6,7 @@ import FeaturedProducts from '../components/FeaturedProducts'
 import About from '../components/About'
 import SpecialOffer from '../components/SpecialOffer'
 import Testimonials from '../components/Testimonials'
-import Contact from '../components/Contact'
+// import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import LogoCarousel from '../components/LogoCarousel'
 
@@ -20,7 +20,7 @@ const Home = () => {
       <About />
       <SpecialOffer />
       <Testimonials />
-      <Contact />
+      {/* <Contact /> */}
       <LogoCarousel />
       <Footer />
     </div>
