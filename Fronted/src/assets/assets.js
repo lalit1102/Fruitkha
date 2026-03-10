@@ -41,12 +41,10 @@ import maggi_image from "./img/maggi_image.png"
 import dairy_product_image from "./img/dairy_product_image.png"
 import bakery_image from "./img/bakery_image.png"
 import namkeen1 from "./img/namkeen1.png"
-import bg_img1 from "./img/bg_img1.png"
+
 import logo_light from "./img/logo_light.png"
 import logo_black from "./img/logo_black.png"
-import hero_customer from "./img/hero_customer.png"
-import deliveryMan from "./img/deliveryMan.png"
-import premium_qualityMan from "./img/premium_qualityMan.png"
+
 
 
 import amul_milk_image from "./img/amul_milk_image.png";
